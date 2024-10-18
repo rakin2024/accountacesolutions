@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AccountAce Solutions - About</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #1686c7;
+            padding: 10px 0;
+        }
+
+        .nav-container {
+            width: 100%;
+            text-align: center;
+        }
+
+        .nav-menu {
+            list-style: none;
+            padding: 0;
+        }
+
+           
+             
+
+        /* About Section */
+        #about {
+            padding: 40px 20px;
+            background-color: #ffffff;
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        #about h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        #about p {
+            font-size: 1rem;
+            color: #59c8ff;
+            margin-bottom: 40px;
+            line-height: 1.5;
+        }
+
+        .services-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .service-card {
+            text-align: center;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .service-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .service-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 5px;
+            color: #59c8ff;
+        }
+
+        .service-card p {
+            font-size: 1rem;
+            color: #777;
+        }
+
+        /* Small Screen Adjustments */
+        @media (max-width: 768px) {
+            .services-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .service-card {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="nav-container">
+<div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="AccountAce Solutions Logo"></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="services.html" class="active">Services</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="services.html#Bookeeping">Bookeeping</a></li>
+                        <li><a href="services.html#tax-preparation">Tax Preparation</a></li>
+                        <li><a href="services.html#Accounting Services">Accounting Services</a></li>
+                        
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+<p style="color: black;"
+        <p>Welcome to AccountAce Solutions, your trusted partner for accounting and financial services. Our team of experts provides personalized solutions to individuals and businesses. With years of experience in the industry, we have established a reputation for delivering high-quality services that meet the unique needs of our clients.</p>
+
+<h2>Meet Our Team</h2>
+     
+        <div class="services-container">
+            <a href="rakin.html" class="service-card">
+                <img src="images/team1.jpg" alt="Rakin Fahad">
+                <h3>Rakin Fahad</h3>
+                <p>Founder & CEO</p>
+            </a>
+            <a href="rafiq.html" class="service-card">
+                <img src="images/team2.jpg" alt="Rafiq Khan">
+                <h3>Rafiq Khan</h3>
+                <p>Accountant</p>
+            </a>
+            <a href="bob.html" class="service-card">
+                <img src="images/team3.jpg" alt="Bob Johnson">
+                <h3>Bob Johnson</h3>
+                <p>Financial Advisor</p>
+            </a>
+        </div>
+    </section>
+
+   <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: info@accountacesolutions.com</p>
+                <p>Phone: +61 497 823 555</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 AccountAce Solutions - All Rights Reserved.</p>
+        </div>
+    </footer>

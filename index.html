@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AccountAce Solutions - Your Trusted Accounting Partner</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Slideshow Styles */
+        .slider-container {
+            width: 100%;
+            max-width: 800px;
+            margin: auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slides {
+            display: flex;  /* Align all images in a row */
+            transition: transform 0.5s ease-in-out; /* Smooth transition when sliding */
+        }
+
+        .slide {
+            width: 100%; /* Make each slide take up full width of the container */
+            flex-shrink: 0; /* Prevent shrinking of slides */
+        }
+
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Make the image fill the container without distortion */
+        }
+
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            border: none;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        /* Centering Hero Content */
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 60px 20px;
+        }
+        .hero-content h1 {
+            font-size: 3em;
+        }
+        .cta-button {
+            background-color: #0073e6;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        /* Header with Dropdown for Services */
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 15px;
+        }
+        .logo img {
+            height: 50px;
+        }
+        .nav-menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .nav-menu li {
+            display: inline-block;
+            position: relative;
+            margin-left: 20px;
+        }
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            list-style: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+        .dropdown-menu li {
+            display: block;
+        }
+        .dropdown-menu a {
+            display: block;
+            padding: 10px;
+        }
+        .nav-menu li:hover .dropdown-menu {
+            display: block;
+        }
+
+        /* Services Section */
+        .services-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .service-card {
+            background-color: #022438;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="AccountAce Solutions Logo"></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li class="dropdown">
+                    <a href="services.html">Services</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="bookkeeping.html">Bookkeeping</a></li>
+                        <li><a href="tax-preparation.html">Tax Preparation</a></li>
+                        <li><a href="accounting-services.html">Accounting Services</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to AccountAce Solutions</h1>
+            <p>Your trusted partner for expert accounting, tax, and business advisory services.</p>
+            <a href="services.html" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Slideshow Section -->
+    <section class="slider-container">
+        <div class="slides">
+            <div class="slide">
+                <img src="images/slide1.jpg" alt="Slide 1">
+            </div>
+            <div class="slide">
+                <img src="images/slide2.jpg" alt="Slide 2">
+            </div>
+            <div class="slide">
+                <img src="images/slide3.jpg" alt="Slide 3">
+            </div>
+        </div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" style="display: flex; justify-content: center; align-items: center; min-height: 500px; flex-direction: column;">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service-card">
+                <h3>Bookkeeping</h3>
+                <p>Expert bookkeeping services tailored to your business needs.</p>
+                <a href="bookkeeping.html" class="learn-more">Learn More</a>
+            </div>
+            <div class="service-card">
+                <h3>Tax Preparation</h3>
+                <p>Efficient and compliant tax preparation services for individuals and businesses.</p>
+                <a href="tax-preparation.html" class="learn-more">Learn More</a>
+            </div>
+            <div class="service-card">
+                <h3>Accounting Services</h3>
+                <p>Comprehensive accounting services to ensure full compliance.</p>
+                <a href="accounting-services.html" class="learn-more">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: info@accountacesolutions.com</p>
+                <p>Phone: +61 497 823 555</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 AccountAce Solutions - All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Slideshow -->
+    <script>
+        let currentIndex = 0;  // Keeps track of the current slide
+
+        const slides = document.querySelector('.slides');  // The container of the slides
+        const slideImages = document.querySelectorAll('.slide');  // All individual slides
+        const prevButton = document.querySelector('.prev');  // Previous button
+        const nextButton = document.querySelector('.next');  // Next button
+
+        // Function to change slide based on the index
+        function changeSlide(index) {
+            if (index < 0) {
+                currentIndex = slideImages.length - 1;  // Loop to the last slide if at the first
+            } else if (index >= slideImages.length) {
+                currentIndex = 0;  // Loop to the first slide if at the last
+            } else {
+                currentIndex = index;
+            }
+
+            // Move the slides to the correct position
+            slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        // Event listeners for the Previous and Next buttons
+        prevButton.addEventListener('click', () => {
+            changeSlide(currentIndex - 1);  // Move to the previous slide
+        });
+
+        nextButton.addEventListener('click', () => {
+            changeSlide(currentIndex + 1);  // Move to the next slide
+        });
+
+        // Set an interval to automatically slide every 3 seconds
+        setInterval(() => {
+            changeSlide(currentIndex + 1);  // Move to the next slide automatically
+        }, 5000);
+
+        // Initial call to show the first slide
+        changeSlide(currentIndex);
+    </script>
+
+</body>
+</html>
